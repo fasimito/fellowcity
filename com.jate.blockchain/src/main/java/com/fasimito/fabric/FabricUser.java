@@ -17,10 +17,10 @@ import io.netty.util.internal.StringUtil;
 /**
  * 联盟用户对象
  * 
- * @author aberic
+ * @author fasimito
  *
- * @date 2017年9月7日 - 下午4:36:53
- * @email abericyang@gmail.com
+ * @date 2018年2月23日 - 下午4:36:53
+ * @email fasimito@163.com
  */
 class FabricUser implements User, Serializable {
 

@@ -29,10 +29,10 @@ import org.hyperledger.fabric.sdk.Enrollment;
 /**
  * 联盟存储配置对象
  * 
- * @author aberic
+ * @author fasimito
  *
- * @date 2017年9月7日 - 下午4:36:19
- * @email abericyang@gmail.com
+ * @date 2018年2月23日 - 下午4:36:19
+ * @email fasimito@163.com
  */
 class FabricStore {
 
