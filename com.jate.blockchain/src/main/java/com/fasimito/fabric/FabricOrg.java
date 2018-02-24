@@ -24,10 +24,10 @@ import com.fasimito.fabric.bean.Orderers;
 /**
  * 联盟组织对象
  * 
- * @author aberic
+ * @author fasimito
  *
- * @date 2017年9月7日 - 下午4:35:40
- * @email abericyang@gmail.com
+ * @date 2018年2月23日 - 下午4:35:40
+ * @email fasimito@163.com
  */
 class FabricOrg {
 
