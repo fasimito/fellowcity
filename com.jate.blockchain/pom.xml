@@ -6,7 +6,19 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
   <artifactId>com.jate.blockchain</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
+  <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.4.2.RELEASE</version>
+  </parent>
   <dependencies>
+  
+     <!-- This is a web application -->
+     <dependency>
+         <groupId>org.springframework.boot</groupId>
+         <artifactId>spring-boot-starter-web</artifactId>
+     </dependency>
+        
      <dependency>
          <groupId>org.hyperledger.fabric-sdk-java</groupId>
          <artifactId>fabric-sdk-java</artifactId>
@@ -20,7 +32,16 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
              <groupId>org.projectlombok</groupId>  
              <artifactId>lombok</artifactId>  
       </dependency>  
+      
+      <!-- Tomcat embedded container-->
+      <dependency>
+          <groupId>org.springframework.boot</groupId>
+          <artifactId>spring-boot-starter-tomcat</artifactId>
+          <scope>provided</scope>
+      </dependency>
     </dependencies>
+    
+    
     <dependencyManagement>
         <dependencies>
             <dependency>

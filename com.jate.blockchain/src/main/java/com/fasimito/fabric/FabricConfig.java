@@ -12,35 +12,35 @@ public class FabricConfig {
 
     private static Logger log = Logger.getLogger(FabricConfig.class);
 
-    /** ½Úµã·şÎñÆ÷¶ÔÏó */
+    /** the peer nodes in the blockchain */
     private Peers peers;
-    /** ÅÅĞò·şÎñÆ÷¶ÔÏó */
+    /** the orderer service node in the blockchain */
     private Orderers orderers;
-    /** ÖÇÄÜºÏÔ¼¶ÔÏó */
+    /** the chaincode */
     private Chaincode chaincode;
-    /** channel-artifactsËùÔÚÂ·¾¶£º
-     * Ä¬ÈÏchannel-artifactsËùÔÚÂ·¾¶/xxx/WEB-INF/classes/fabric/channel-artifacts/ */
+    /** channel-artifactsï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½
+     * Ä¬ï¿½ï¿½channel-artifactsï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½/xxx/WEB-INF/classes/fabric/channel-artifacts/ */
     private String channelArtifactsPath;
-    /** crypto-configËùÔÚÂ·¾¶£º
-     * Ä¬ÈÏcrypto-configËùÔÚÂ·¾¶/xxx/WEB-INF/classes/fabric/crypto-config/ */
+    /** crypto-configï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½
+     * Ä¬ï¿½ï¿½crypto-configï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½/xxx/WEB-INF/classes/fabric/crypto-config/ */
     private String cryptoConfigPath;
     private boolean registerEvent = false;
 
     public FabricConfig() {
         /**
-         *  Ä¬ÈÏchannel-artifactsËùÔÚÂ·¾¶ /xxx/WEB-INF/classes/fabric/channel-artifacts/
-         *  ¸ÃÂ·¾¶ÏÂ´æ´¢ÁË´´ÊÀÇø¿é¡¢ÆµµÀÅäÖÃÎÄ¼ş¡¢Ãª½Úµã¶¨ÒåÎÄ¼ş
+         *  Ä¬ï¿½ï¿½channel-artifactsï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ /xxx/WEB-INF/classes/fabric/channel-artifacts/
+         *  ï¿½ï¿½Â·ï¿½ï¿½ï¿½Â´æ´¢ï¿½Ë´ï¿½ï¿½ï¿½ï¿½ï¿½é¡¢Æµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½Ãªï¿½Úµã¶¨ï¿½ï¿½ï¿½Ä¼ï¿½
          */
         channelArtifactsPath = getChannlePath() + "/channel-artifacts/";
         /**
-         * Ä¬ÈÏcrypto-configËùÔÚÂ·¾¶ /xxx/WEB-INF/classes/fabric/crypto-config/
-         * ¸ÃÂ·¾¶ÏÂ´æ·ÅÖ¤ÊéºÍÃØÔ¿
+         * Ä¬ï¿½ï¿½crypto-configï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ /xxx/WEB-INF/classes/fabric/crypto-config/
+         * ï¿½ï¿½Â·ï¿½ï¿½ï¿½Â´ï¿½ï¿½Ö¤ï¿½ï¿½ï¿½ï¿½ï¿½Ô¿
          */
         cryptoConfigPath = getChannlePath() + "/crypto-config/";
     }
 
     /**
-     * Ä¬ÈÏfabricÅäÖÃÂ·¾¶
+     * Ä¬ï¿½ï¿½fabricï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½
      * 
      * @return D:/installSoft/apache-tomcat-9.0.0.M21-02/webapps/xxx/WEB-INF/classes/fabric/channel-artifacts/
      */

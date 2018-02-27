@@ -1,3 +1,7 @@
+/**
+ * this is the main class used for call the related configuration files.
+ * and call the blockchain network
+ */
 package com.fasimito.fabric;
 
 import static java.nio.charset.StandardCharsets.UTF_8;
