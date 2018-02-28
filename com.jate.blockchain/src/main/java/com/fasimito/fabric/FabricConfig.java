@@ -18,7 +18,8 @@ public class FabricConfig {
     private Orderers orderers;
     /** the chaincode */
     private Chaincode chaincode;
-    /** channel-artifacts����·����
+    /** channel-artifacts:
+     * in this path stored 
      * Ĭ��channel-artifacts����·��/xxx/WEB-INF/classes/fabric/channel-artifacts/ */
     private String channelArtifactsPath;
     /** crypto-config����·����
