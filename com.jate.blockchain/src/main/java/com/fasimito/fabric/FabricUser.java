@@ -1,3 +1,6 @@
+/**
+ * 
+ */
 package com.fasimito.fabric;
 
 import java.io.ByteArrayInputStream;
@@ -16,7 +19,6 @@ import io.netty.util.internal.StringUtil;
 
 /**
  * 联盟用户对象
- * 
  * @author fasimito
  *
  * @date 2018年2月23日 - 下午4:36:53
